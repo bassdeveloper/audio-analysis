@@ -14,9 +14,16 @@
  * limitations under the License.
  */
 
+// 'dotenv' is used for getting api keys from
+// different services into the node environment.
+// The .env file is required according to the 12FA.
+
 require('dotenv').config({ silent: true });
 
+// Express is used for the node app framework
 var express = require('express');
+
+
 var vcapServices = require('vcap_services');
 var extend = require('extend');
 var AlchemyLanguageV1 = require('watson-developer-cloud/alchemy-language/v1');

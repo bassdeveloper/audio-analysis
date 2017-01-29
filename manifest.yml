@@ -2,13 +2,13 @@
 declared-services:
   alchemy-language-service:
     label: alchemy_api
-    plan: free
+    plan: standard
   speech-to-text-service:
     label: speech_to_text
     plan: standard
 
 applications:
-- name: audio-analysis-starter-kit
+- name: analysis-audio
   path: .
   command: npm start
   memory: 512M
